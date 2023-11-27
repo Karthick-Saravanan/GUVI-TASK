@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Website</title>
+    <link rel="stylesheet" href="/css/css.css">
+</head>
+<body>
+<div id="registrationForm" class="container">
+    <h2>Registration Page</h2>
+    <form onsubmit="registerUser(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="usernameReg">Username:</label>
+        <input type="text" id="usernameReg" required>
+
+        <label for="passwordReg">Password:</label>
+        <input type="password" id="passwordReg" required> 
+    </form>
+    <button onclick="openLogin()">Register</button>
+        <script>
+            function openLogin() {
+                window.location.href = 'login.html';
+            }
+        </script>
+</div>
+</body>
+</html>

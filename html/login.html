@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Website</title>
+    <link rel="stylesheet" href="/css/css.css">
+</head>
+<body>
+<div id="loginForm" class="container">
+    <h2>Login Page</h2>
+    <form onsubmit="loginUser(event)">
+        <label for="usernameLogin">Username:</label>
+        <input type="text" id="usernameLogin" required>
+
+
+        <label for="passwordLogin">Password:</label>
+        <input type="password" id="passwordLogin" required>
+        <button type="submit">Login</button>
+    </form>
+    <p class="register">New user? <a href="register.html">Register here</a></p>  
+</div>
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        window.location.href = 'https://guvi.in';
+    });
+</script>
+</body>
+</html>
